@@ -153,6 +153,7 @@ const loadMoveDataToWebPage = (theMove, pokemonObject, attackIndex) => {
 						</div>
 								`
 	moveWebHook.innerHTML = htmlString + moveWebHook.innerHTML;
+	moveWebHook.className = `col-1 btn ${theMove.type}`;
 };
 
 export { loadPokemonFromAPI, displayPokemonToWebpage, loadMoveDataToWebPage, loadMoveFromAPI };
