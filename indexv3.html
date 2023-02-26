@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokemon Battle Sim</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- imported fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1 class="title">PokeBattle Sim v3</h1>
+    <h2 class="subtitle">By Mr. Gutierrez</h2>
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="card col-12 h-100">
+                    <div class="roster row" id="p1Roster">
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage active" src="src/136.png" />
+                    </div>
+
+                    <div class="col" id="Player1Pokemon">
+                    </div>
+
+                    <progress id="Player1Health"></progress>
+
+                    <div class="row buttonarea">
+                        <div class="btn-group Player1PokemonMoves" role="group" aria-label="Basic example">
+                            <button type="button" class="col-1 btn normal" id="p1move1">
+
+                            </button>
+                            <button type="button" class="col-1 btn normal" id="p1move2">
+
+                            </button>
+                        </div>
+                        <div class="btn-group Player1PokemonMoves" role="group" aria-label="Basic example">
+                            <button type="button" class="col-1 btn normal" id="p1move3">
+
+                            </button>
+                            <button type="button" class="col-1 btn normal" id="p1move4">
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col col-12 col-sm-4 col-md-2 my-auto">
+                <div class="card vs">
+                    <div>VS</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card col-12 h-100">
+                    <div class="roster row" id="p2Roster">
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage" src="src/136.png" />
+                        <img class="rosterImage active" src="src/136.png" />
+                    </div>
+
+                    <div class="col" id="Player2Pokemon">
+                    </div>
+
+                    <progress id="Player2Health" value="100" max="100"></progress>
+
+                    <div class="row buttonarea">
+                        <div class="btn-group Player2PokemonMoves" role="group" aria-label="Basic example">
+                            <button type="button" class="col-1 btn normal" id="p2move1">
+
+                            </button>
+                            <button type="button" class="col-1 btn normal" id="p2move2">
+
+                            </button>
+                        </div>
+                        <div class="btn-group Player2PokemonMoves" role="group" aria-label="Basic example">
+                            <button type="button" class="col-1 btn normal" id="p2move3">
+
+                            </button>
+                            <button type="button" class="col-1 btn normal" id="p2move4">
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="" id="Combat_Log">
+        <label id="Combat_Log_Label">Combat Log</label>
+        <ul id="Combat_Log_List">
+
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    
+
+    <script type="module" src="main.js" async defer></script>
+</body>
+
+</html>
